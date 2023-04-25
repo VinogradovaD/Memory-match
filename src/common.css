@@ -1,0 +1,19 @@
+:root {
+  --color-blue: #0083FC;
+  --color-coral: #FF5533;
+  --color-grey: #E6E6E6;
+  --color-white: #FFFFFF;
+
+  --container-width: 1435px;
+  --grid-column-width: 101px;
+  --grid-gap: 20px;
+}
+
+* {
+  all: unset;
+  display: revert;
+}
+
+body {
+  font-family: 'Formular';
+}

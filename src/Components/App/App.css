@@ -1,0 +1,26 @@
+.game {
+    padding: 5% 15%;
+}
+
+.game__title {
+    font-size: 50px;
+    line-height: 35px;
+    font-weight: 700;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.game__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.game__cards {
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+}
