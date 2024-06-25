@@ -1,26 +1,57 @@
 .game {
-    padding: 5% 15%;
+    padding: 100px 0;
 }
 
 .game__title {
     font-size: 50px;
-    line-height: 35px;
+    line-height: 50px; /* Пример значения для line-height при font-size 50px */
     font-weight: 700;
     color: var(--color-blue);
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 5%;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    @media screen and (max-width: 992px) {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 35px;
+        line-height: 35px;
+    }
+    @media screen and (max-width: 576px) {
+        font-size: 30px;
+        line-height: 30px;
+    }
 }
+
 
 .game__content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    max-width: 1108px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 576px) {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 .game__cards {
     column-gap: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 0fr);
     row-gap: 10px;
+
+    @media screen and (max-width: 576px) {
+        column-gap: 5px;
+        row-gap: 5px;
+    }
 }
