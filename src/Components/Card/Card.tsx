@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import './Card.css';
-import cover from '../../images/cover.png';
 
 interface Props {
     id: number;
@@ -22,7 +21,7 @@ export const Card: FC<Props> = ({ id, image, status = 'closed', onClick }) => {
             {status === 'open' ? (
                 <img className="card__image" src={image} alt="img"/>
             ) : (
-                <img className="card__cover" src={cover} alt="cover"/>
+                <div className="card__cover" />
             )}
         </div>
     );
