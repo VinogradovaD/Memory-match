@@ -13,7 +13,7 @@ export const ResultInner = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
+  width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,11 +22,15 @@ export const ResultInner = styled.div`
   background-color: ${({ theme }) => theme.colors.accent};
   color: #ffffff;
   box-sizing: border-box;
-  padding: 60px 100px;
+  padding: 60px 80px;
+
+  @media (max-width: ${breakpoints['laptop']}) {
+    width: 60%;
+    padding: 40px 60px;
+  }
 
   @media (max-width: ${breakpoints['tablet']}) {
-    width: 60%;
-    padding: 40px 80px;
+    width: 70%;
   }
 
   @media (max-width: ${breakpoints['pad']}) {
@@ -42,10 +46,9 @@ export const ResultInner = styled.div`
 
 export const ResultText = styled.p`
   text-transform: uppercase;
-  width: 400px;
   text-align: center;
   font-size: 24px;
-  line-height: 50px;
+  line-height: 30px;
   font-weight: 700;
   margin-bottom: 80px;
   white-space: pre-line;

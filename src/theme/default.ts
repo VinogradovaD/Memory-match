@@ -31,4 +31,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 `;
 
+
+export type TTheme = typeof darkTheme | typeof lightTheme
 export type TColors = typeof darkTheme.colors | typeof lightTheme.colors;
