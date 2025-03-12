@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../utils/breakpoints';
 
 export const GameContainer = styled.div`
   height: 100vh;
@@ -17,21 +18,21 @@ export const GameTitle = styled.h1`
   text-transform: uppercase;
   text-align: center;
 
-  @media screen and (max-width: 1200px) {
+  @media (max-width: ${breakpoints['laptop']}) {
     font-size: 45px;
     line-height: 45px;
   }
-  @media screen and (max-width: 992px) {
+  @media (max-width: ${breakpoints['tablet']}) {
     font-size: 40px;
     line-height: 40px;
   }
-  @media screen and (max-width: 768px) {
+  @media (max-width: ${breakpoints['pad']}) {
     font-size: 35px;
     line-height: 35px;
   }
-  @media screen and (max-width: 576px) {
-    font-size: 30px;
-    line-height: 30px;
+  @media (max-width: ${breakpoints['phone']}) {
+    font-size: 25px;
+    line-height: 25px;
   }
 `;
 
@@ -43,7 +44,7 @@ export const GameContent = styled.div`
   max-width: 1108px;
   gap: 10px;
 
-  @media screen and (max-width: 576px) {
+  @media (max-width: ${breakpoints['phone']}) {
     flex-direction: column;
   }
 `;
@@ -54,7 +55,7 @@ export const GameCards = styled.div`
   column-gap: 10px;
   row-gap: 10px;
 
-  @media screen and (max-width: 576px) {
+  @media (max-width: ${breakpoints['phone']}) {
     column-gap: 5px;
     row-gap: 5px;
   }

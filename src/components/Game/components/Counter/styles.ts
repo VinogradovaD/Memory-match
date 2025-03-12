@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../../../utils/breakpoints';
 
 export const CounterContainer = styled.div`
   display: flex;
@@ -12,19 +13,19 @@ export const CounterContainer = styled.div`
   line-height: 30px;
   font-weight: 500;
 
-  @media screen and (max-width: 1200px) {
+  @media (max-width: ${breakpoints['laptop']}) {
     font-size: 22px;
     line-height: 28px;
   }
-  @media screen and (max-width: 992px) {
+  @media (max-width: ${breakpoints['tablet']}) {
     font-size: 20px;
     line-height: 26px;
   }
-  @media screen and (max-width: 768px) {
+  @media (max-width: ${breakpoints['pad']}) {
     font-size: 18px;
     line-height: 24px;
   }
-  @media screen and (max-width: 576px) {
+  @media (max-width: ${breakpoints['phone']}) {
     font-size: 16px;
     line-height: 22px;
 

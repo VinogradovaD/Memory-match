@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../../../utils/breakpoints';
 
 export const ResultWrapper = styled.div`
   position: absolute;
@@ -23,17 +24,17 @@ export const ResultInner = styled.div`
   box-sizing: border-box;
   padding: 60px 100px;
 
-  @media screen and (max-width: 992px) {
+  @media (max-width: ${breakpoints['tablet']}) {
     width: 60%;
     padding: 40px 80px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: ${breakpoints['pad']}) {
     width: 80%;
     padding: 30px 60px;
   }
 
-  @media screen and (max-width: 576px) {
+  @media (max-width: ${breakpoints['phone']}) {
     width: 90%;
     padding: 20px 40px;
   }
@@ -49,7 +50,7 @@ export const ResultText = styled.p`
   margin-bottom: 80px;
   white-space: pre-line;
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: ${breakpoints['pad']}) {
     width: 100%;
     font-size: 20px;
     margin-bottom: 50px;
@@ -72,11 +73,11 @@ export const ResultButton = styled.button`
     opacity: 0.8;
   }
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: ${breakpoints['pad']}) {
     padding: 15px 50px;
   }
 
-  @media screen and (max-width: 576px) {
+  @media (max-width: ${breakpoints['phone']}) {
     padding: 10px 40px;
   }
 `;

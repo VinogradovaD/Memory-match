@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../utils/breakpoints';
 
 export const ThemeSwitcherContainer = styled.div`
   position: absolute;
@@ -8,6 +9,18 @@ export const ThemeSwitcherContainer = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 5px;
+
+  @media (max-width: ${breakpoints['pad']}) {
+    top: 10px;
+    right: 10px;
+    gap: 3px;
+  }
+
+  @media (max-width: ${breakpoints['phone']}) {
+    top: 8px;
+    right: 8px;
+    gap: 2px;
+  }
 `;
 
 export const SwitcherLabel = styled.label`
@@ -15,6 +28,16 @@ export const SwitcherLabel = styled.label`
   display: inline-block;
   width: 60px;
   height: 34px;
+
+  @media (max-width: ${breakpoints['pad']}) {
+    width: 50px;
+    height: 28px;
+  }
+
+  @media (max-width: ${breakpoints['phone']}) {
+    width: 40px;
+    height: 23px;
+  }
 `;
 
 export const SwitcherInput = styled.input.attrs({ type: 'checkbox' })`
@@ -46,5 +69,21 @@ export const SwitcherSlider = styled.span<{ checked: boolean }>`
     transition: 0.4s;
     border-radius: 50%;
     transform: ${(props) => (props.checked ? 'translateX(26px)' : 'translateX(0)')};
+  }
+
+  @media (max-width: ${breakpoints['pad']}) {
+    &:before {
+      height: 20px;
+      width: 20px;
+      transform: ${(props) => (props.checked ? 'translateX(22px)' : 'translateX(0)')};
+    }
+  }
+
+  @media (max-width: ${breakpoints['phone']}) {
+    &:before {
+      height: 16px;
+      width: 16px;
+      transform: ${(props) => (props.checked ? 'translateX(18px)' : 'translateX(0)')};
+    }
   }
 `;

@@ -9,7 +9,7 @@ import { GameCards, GameContainer, GameContent, GameTitle } from './style';
 import { CardStatus } from './components/Card/types';
 
 export const Game: FC = () => {
-  const totalMovesNumber = 40;
+  const totalMovesNumber = 30;
   const [shuffleCards, setShuffleCards] = useState<string[]>([]);
   const [movesNumber, setMovesNumber] = useState(0);
   const [attemptsNumber, setAttemptsNumber] = useState(totalMovesNumber);
@@ -47,7 +47,7 @@ export const Game: FC = () => {
 
     if (selectedCards[0] !== null && selectedCards[1] === null) {
       setSelectedCards([selectedCards[0], id]);
-      setTimeout(checkCards, 500, selectedCards[0], id);
+      setTimeout(checkCards, 700, selectedCards[0], id);
     }
 
     setAttemptsNumber(attemptsNumber - 1);
@@ -81,7 +81,9 @@ export const Game: FC = () => {
 
   return (
     <GameContainer>
-      <GameTitle>Memory match</GameTitle>
+      <GameTitle>
+        How I met your mother <br /> Memory match
+      </GameTitle>
       <GameContent>
         <Counter title="Moves made" value={movesNumber} />
         <GameCards>
