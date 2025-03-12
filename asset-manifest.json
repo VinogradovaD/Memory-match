@@ -1,20 +1,18 @@
 {
   "files": {
-    "main.css": "/Memory-match/static/css/main.52464118.css",
-    "main.js": "/Memory-match/static/js/main.894c35f8.js",
-    "static/media/nginx.png": "/Memory-match/static/media/nginx.3e8dd467841ef3d4c250.png",
-    "static/media/react.png": "/Memory-match/static/media/react.8f21e32c39bb7d81cdd1.png",
-    "static/media/nodejs.png": "/Memory-match/static/media/nodejs.53f8a8231b028048b9ae.png",
-    "static/media/firebase.png": "/Memory-match/static/media/firebase.8fea0f8ff533810ba5f6.png",
-    "static/media/webpack.png": "/Memory-match/static/media/webpack.e80e19b2352a24d41d50.png",
-    "static/media/redux.png": "/Memory-match/static/media/redux.bada393c64af35446755.png",
-    "static/media/webstorm.png": "/Memory-match/static/media/webstorm.d89abf5568721a2f2ee7.png",
+    "main.js": "/Memory-match/static/js/main.440004d1.js",
+    "static/media/image_1.webp": "/Memory-match/static/media/image_1.4a4877aaefda946f570a.webp",
+    "static/media/image_7.webp": "/Memory-match/static/media/image_7.037b15dc27b4eaed3a74.webp",
+    "static/media/image_4.webp": "/Memory-match/static/media/image_4.0d577d012246def5f8b9.webp",
+    "static/media/image_2.webp": "/Memory-match/static/media/image_2.fb3236426aea542f1e4b.webp",
+    "static/media/image_5.webp": "/Memory-match/static/media/image_5.771f40a8a8ca8adecc07.webp",
+    "static/media/image_8.webp": "/Memory-match/static/media/image_8.41cb315db95d00dab3b8.webp",
+    "static/media/image_3.webp": "/Memory-match/static/media/image_3.716718dd1f4f1a161997.webp",
+    "static/media/image_6.webp": "/Memory-match/static/media/image_6.81ab25f2c12173f6d54f.webp",
     "index.html": "/Memory-match/index.html",
-    "main.52464118.css.map": "/Memory-match/static/css/main.52464118.css.map",
-    "main.894c35f8.js.map": "/Memory-match/static/js/main.894c35f8.js.map"
+    "main.440004d1.js.map": "/Memory-match/static/js/main.440004d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.52464118.css",
-    "static/js/main.894c35f8.js"
+    "static/js/main.440004d1.js"
   ]
 }
