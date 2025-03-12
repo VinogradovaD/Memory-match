@@ -1,3 +1,10 @@
+### Thanks for stickers
+
+https://vk.com/wall-97263880_13780
+
+https://vk.com/wall-97263880_11403
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
