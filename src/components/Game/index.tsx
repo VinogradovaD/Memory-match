@@ -95,9 +95,9 @@ export const Game: FC = () => {
       </GameContent>
       {gameEnd &&
         (!attemptsNumber && cardsStatus.filter((item) => item === CardStatus.CLOSED).length ? (
-          <Result text={`Sorry, you are lost`} onButtonClick={newGameButtonClick} />
+          <Result text={`Sorry, you lost`} onButtonClick={newGameButtonClick} />
         ) : (
-          <Result text={`Congratulations, you are won`} onButtonClick={newGameButtonClick} />
+          <Result text={`Congratulations, you won`} onButtonClick={newGameButtonClick} />
         ))}
     </GameContainer>
   );
